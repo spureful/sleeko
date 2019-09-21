@@ -1,0 +1,20 @@
+extends _layout.pug
+block variables
+    - var currentPage = "Portfolio."
+    - var sectionClass = "portfolio"
+
+block content
+    ul.portfolio__nav
+        - var portfolioItems = ['Show All ' ,     ' Web Design',       'Logo Design' ,       'Interface Design',       ' Miscellaneous']
+            each portfolioItem in portfolioItems
+                li.portfolio__nav-item
+                    a(href='#').portfolio__nav-link #{portfolioItem}
+                    
+    ul.portfolio__list
+        - var portfolioIMGs = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+            each portfolioIMG in portfolioIMGs
+                li.portfolio__item
+                    +image(`portfolio/${portfolioIMG}.jpg`, 'image', 'portfolio__item-img')
+                    h3.portfolio__title Tittle of the design
+                    p.portfolio__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, tortor eu 
+                    a(href='#').portfolio__link See Design

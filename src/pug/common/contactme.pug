@@ -1,0 +1,33 @@
+extends _layout.pug
+block variables
+    - var currentPage = "contact me."
+    - var sectionClass = "contactme"
+
+block content
+    .contactme__left
+        h2.title Thank you!
+            span.subtitle Get in touch with me now.
+            
+        form.contactme__form
+            input(type="text" placeholder='Your Name').contactme__input
+            input(type="text" placeholder='Your Email Address').contactme__input
+            input(type="text" placeholder='Your Estimated Budget').contactme__input
+            textarea( placeholder='Your Project Description').contactme__input.contactme__input--ta
+            button(type='submit').contactme__btn submit now
+    .contactme__right
+        h2.contactme__title Available For Hire
+        .contactme__socials
+            .contactme__soc-title Connect with me via:
+            ul.contactme__soc-list
+                - var socialIcons = ['twitter', 'fb', 'insta', 'mail']
+                    each socialIcon in socialIcons
+                        li.contactme__soc-item
+                            a.contactme__soc-link
+                                +image(`contactme/${socialIcon}.png`, `${socialIcon} icon`, 'contactme__soc-icon')
+                                
+        address.contactme__info
+            .logo
+                +image('contactme/logo.png', 'logo', 'logo__img')
+            p.contactme__info-descr This is a FREE single page website design created in Photoshop format exclusively for Pixelactic.com’s readers. This deisgn is created by Rafi. Hope you’ll like this design. Thanks!
+            .contactme__copyright © Copyright. All rights reserved.
+        

@@ -1,0 +1,196 @@
+body,
+html {
+    height: 100%;
+
+
+    @include phone {
+        min-width: 320px;
+    }
+}
+
+
+body {
+    //	font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 16px;
+    //	line-height: 1.42;
+    //	color: $text-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: #dadada;
+
+    @include tablet {
+        font-size: 20px;
+    }
+    
+    @include phone {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.wrapper {
+    width: 100%;
+    min-width: 320px;
+
+}
+
+.main {
+    max-width: 960px;
+
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 845px;
+    
+     padding-top: 50px;
+    
+    text-align: left;
+}
+
+.maincontent {
+    width: 100%;
+
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15), inset 0 0 0 3px #ffffff;
+    border: 1px solid #b2b2b2;
+    background-color: #eeeeee;
+    background-image: linear-gradient(to bottom, #eeeeee 0, #eee 90%,  #dddddd 95% );
+    
+    text-align: center;
+    margin-bottom: 34px;
+    
+    position: relative;
+    
+    &:before, &:after {
+        content: '';
+        width: 100vw;
+        height: 245px;
+        
+        background-image: url(../../img/pallet.jpg);
+        position: absolute;
+        top: 52px;
+        left: 0;
+        z-index: -1;
+    }
+        &:after {
+        
+        left:-100%;
+    }
+}
+
+.btn {
+
+    display: inline-block;
+
+    padding: 9px 14px 9px 19px;
+    box-shadow: 0 -3px 3px 1px rgba(118, 118, 118, 0.15);
+    border: 1px solid #cfcfcf;
+    background-image: linear-gradient(to top, #eeeeee 0%, #f6f6f6 90%, #ffffff 92%, #ffffff 100%);
+    border-radius: 50px;
+
+
+    text-shadow: 0 2px 0 #ffffff;
+    color: #b2b2b2;
+    font-family: "Helvetica Condensed";
+    font-size: rem(15px);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.75px;
+
+    margin: 0 auto 32px;
+    
+    transition: 1s;
+    
+    &:hover {
+        color: #14141c;
+        border: 1px solid #14141c;
+    }
+}
+
+
+.title {
+
+
+text-shadow: 1px 2px 0 #ffffff;
+color: #6b4848;
+font-family: "Gill Sans MT";
+font-size: rem(60px);
+font-weight: 700;
+    white-space: nowrap;
+    
+    @include tablet {
+        font-size: rem(40px);
+        text-align: center;
+        padding: 0;
+    }
+    
+    @include tabletS {
+            font-size: rem(30px);
+        }
+    
+    @include phone {
+         white-space: normal;
+          font-size: rem(28px);
+    }
+
+}
+
+.subtitle {
+    @extend .title;
+    font-size: rem(38px);
+    display: block;
+    
+     @include tablet {
+        font-size: rem(28px);
+    }
+    
+    @include tabletS {
+            font-size: rem(20px);
+        }
+    
+     @include phone {
+        font-size: rem(18px);
+    }
+        
+}

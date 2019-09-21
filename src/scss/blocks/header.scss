@@ -1,0 +1,35 @@
+.header {
+    text-align: center;
+
+    padding-top: 7px;
+    margin-bottom: 30px;
+}
+
+.header__logo {
+
+    margin-bottom: 4px;
+    @include phone {
+
+        
+        .logo__img {
+            width: 40%;
+        }
+        
+      
+    } 
+
+}
+
+
+.logo-descr {
+
+color: #9f9f9f;
+font-family: "Gill Sans MT";
+font-size: rem(15px);
+font-weight: 700;
+text-transform: uppercase;
+    
+    @include phone {
+        font-size: rem(12px);
+    }
+}

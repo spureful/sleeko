@@ -1,0 +1,21 @@
+block variables
+    
+    - var currentPage = "";
+    - var sectionClass = ""
+    
+section(class=`${sectionClass}` id=`${sectionClass}`)    
+    nav.nav
+        button(type='button').nav-btn
+            span.nav__line
+        ul.nav__list
+            - var navItems = [{ title: 'home.', href: 'index.html' } , {title: 'Portfolio.',  href: '#portfolio' } , {title: 'what i do. ', href: '#whatido'} , {       title: 'contact me.', href: '#contactme' }];
+                each navItem in navItems
+
+                    li.nav__item(class=(currentPage === navItem.title) ? 'active': '')
+                        a(href=`${navItem.href}`).nav__link #{navItem.title}
+
+    .maincontent
+        .container
+            block content
+
+        a(href='index.html').btn go to top

@@ -1,0 +1,153 @@
+.whatido {
+
+    margin-bottom: 60px;
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .title {
+        padding-left: 18px;
+        margin-bottom: 25px;
+
+        @include tablet {
+
+            padding: 0;
+        }
+    }
+
+    .subtitle {
+        padding-left: 0;
+    }
+
+}
+
+.whatido__row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 52px;
+    
+     @include phone {
+flex-direction: column;
+    }
+}
+
+.whatido__row-title {
+
+    color: #b5b5b5;
+    font-family: "Gill Sans MT";
+    font-size: rem(50px);
+
+    padding-left: 15px;
+    margin-right: 30px;
+
+    @include tabletS {
+        font-size: rem(40px);
+    }
+    
+    
+     @include phone {
+        text-align: center;
+         padding: 0;
+         margin: 0;
+    }
+  
+
+    &:after {
+        content: '{';
+        margin-left: 15px;
+
+        font-size: rem(70px);
+
+        @include tabletS {
+            font-size: rem(60px);
+        }
+        
+         @include phone {
+        font-size: rem(60px);
+             display: block;
+             transform: rotate(-90deg);
+             margin: 0;
+    }
+    }
+
+}
+
+.whatido__row-text {
+
+    color: #a7a7a7;
+    font-family: Georgia;
+    font-size: rem(15px);
+    font-style: italic;
+    padding-top: 10px;
+
+    @include tabletS {
+        text-align: justify;
+    }
+    
+     @include phone {
+        font-size: rem(18px);
+         padding: 15px;
+    }
+}
+
+
+.whatido__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+
+    @include tabletS {
+        flex-direction: column;
+
+    }
+}
+
+.whatido__item {
+    width: 28%;
+    padding-left: 17px;
+
+    @include tabletS {
+        width: 98%;
+        margin-bottom: 30px;
+    }
+}
+
+.whatido__title {
+    color: #000000;
+    font-family: "Helvetica Condensed";
+    font-size: rem(25px);
+    font-weight: 700;
+
+    margin-bottom: 5px;
+
+
+    @include tabletS {
+        text-align: center;
+    }
+}
+
+.whatido__text {
+    color: #686767;
+    font-family: "Lucida Sans";
+    font-size: rem(12px);
+
+    line-height: 2em;
+    
+     @include phone {
+        font-size: rem(16px);
+         text-align: justify;
+         padding: 0 15px;
+    }
+}

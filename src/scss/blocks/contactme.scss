@@ -1,0 +1,260 @@
+.contactme {
+    .container {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+
+        padding-top: 35px;
+
+        @include tabletS {
+            flex-direction: column;
+            padding: 30px 15px 0;
+        }
+    }
+
+    .maincontent {
+        position: relative;
+
+        @include tablet {
+            overflow: hidden;
+        }
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        @include tablet {
+            font-size: 24px;
+        }
+    }
+}
+
+.contactme__left {
+    width: 60%;
+
+    @include tablet {
+        width: 50%;
+    }
+
+    @include tabletS {
+        width: 100%;
+    }
+}
+
+
+.contactme__right {
+    @include tablet {
+        width: 50%;
+        overflow: hidden;
+    }
+
+
+    @include tabletS {
+        width: 100%;
+        margin-bottom: 30px;
+        
+    }
+}
+
+.contactme__form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    margin-bottom: 39px;
+
+    @include tablet {
+        width: 100%;
+    }
+
+    @include tabletS {
+        margin-top: 30px;
+    }
+}
+
+
+.contactme__input {
+    margin-bottom: 15px;
+
+    border-radius: 30px;
+    box-shadow: 1px 1px 0 #ffffff, inset 0 3px 3px rgba(0, 0, 0, 0.1);
+    background-color: #eee;
+    padding: 10px 20px;
+
+    font-family: "Lucida Sans";
+    font-size: rem(12px);
+    color: #686767;
+
+
+
+
+}
+
+.contactme__input--ta {
+    resize: none;
+    min-height: 180px;
+
+    margin-bottom: 27px;
+}
+
+.contactme__btn {
+    @extend .promo__btn;
+    max-width: 184px;
+    white-space: nowrap;
+    margin-left: 95px;
+
+    @include tabletS {
+        margin: 0 auto;
+    }
+}
+
+.contactme__title {
+
+    color: #e2e2e2;
+    font-family: "Gill Sans MT";
+    font-size: rem(35px);
+    font-weight: 700;
+    letter-spacing: -1.75px;
+
+
+
+    position: absolute;
+    z-index: 10;
+    top: 145px;
+    right: 26px;
+
+
+    @include tablet {
+        font-size: rem(30px);
+    }
+
+    @include tabletS {
+        position: relative;
+        text-align: center;
+        top: 0;
+        right: 0;
+        color: #525269;
+        margin-bottom: 30px;
+    }
+
+    &:before {
+        content: '';
+        width: 357px;
+        height: 95px;
+
+        background-image: url(../img/contactme/el.png);
+        background-repeat: no-repeat;
+
+        position: absolute;
+        right: -38px;
+        top: -15px;
+        //        transform: translateY(-50% );
+
+        z-index: -1;
+
+        @include tablet {
+            height: 70px;
+            width: 350px;
+            background-size: cover;
+            right: -78px;
+        }
+
+        @include tabletS {
+            display: none;
+        }
+    }
+
+}
+
+.contactme__socials {
+    margin-top: 240px;
+    padding-left: 75px;
+
+    margin-bottom: 50px;
+
+    @include tablet {
+        padding-left: 30px;
+    }
+    
+    @include tabletS {
+        margin-top: 0;
+        padding-left: 0;
+    }
+}
+
+.contactme__soc-title {
+
+    color: #686767;
+    font-family: "Lucida Sans";
+    font-size: rem(12px);
+
+
+    margin-bottom: 25px;
+    
+      @include tabletS {
+       font-size: rem(18px);
+    }
+}
+
+.contactme__soc-list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    text-align: center;
+}
+
+.contactme__soc-item {
+    margin-right: 17px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.contactme__soc-link {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+
+}
+
+.contactme__soc-icon {
+    display: block;
+}
+
+.contactme__info {
+    text-align: right;
+
+    color: #686767;
+    font-family: "Lucida Sans";
+    font-size: rem(12px);
+    line-height: 20px;
+    
+      @include tabletS {
+        text-align: left;
+          font-size: rem(18px);
+    }
+    .logo {
+        margin-bottom: 15px;
+    }
+}
+
+
+.contactme__info-descr {
+    margin-bottom: 20px;
+}

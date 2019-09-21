@@ -1,0 +1,21 @@
+extends _layout.pug
+block variables
+    - var currentPage = "what i do. "
+    - var sectionClass = "whatido"
+
+block content
+    h2.title Clean, Wonderful & Effective 
+        span.subtitle websites that can really improve your business
+        
+    .whatido__row
+        h3.whatido__row-title Testimonial
+        p.whatido__row-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, tortor eu aliquam posuere, sem tortor semper urna, nec lacinia nibh nisi vel elit. Phasellus placerat, felis id rhoncus vulputate.
+        
+    ul.whatido__list
+        - var whatidoTitles = ['Web Design', 'Web Marketing' , 'Social Media']
+            each whatidoTitle in whatidoTitles
+                li.whatido__item
+                    h3.whatido__title #{whatidoTitle}
+                    p.whatido__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, tortor eu aliquam posuere, sem tortor semper urna, nec lacinia nibh nisi vel elit. Phasellus placerat, felis id rhoncus vulputate, purus velit elementum lectus, nec fermentum libero nunc at diam. In tempor, orci in rhoncus suscipit, velit orci blandit ipsum, a dapibus nisl massa in nunc. 
+        
+    

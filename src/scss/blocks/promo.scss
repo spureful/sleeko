@@ -1,0 +1,117 @@
+.promo__banner {
+    padding: 20px 40px 25px;
+
+    box-shadow: 1px 1px 0 #ffffff, inset 0 5px 5px 1px rgba(0, 0, 0, 0.75);
+    background-image: linear-gradient(to top, #9292ad 0%, #323247 100%);
+
+    text-align: center;
+
+
+    color: #e0e0e0;
+}
+
+
+.promo__title {
+    font-family: "Helvetica Condensed";
+    font-size: rem(150px);
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+    text-shadow: 1px 1px 1px rgba(77, 77, 99, 0.75);
+
+    letter-spacing: -7.5px;
+    line-height: 1.1;
+
+    @include phone {
+        font-size: rem(60px);
+        letter-spacing: .5rem;
+    }
+
+}
+
+.promo__text {
+
+    font-family: "Gill Sans MT";
+    font-size: rem(40px);
+
+    margin-bottom: 15px;
+
+    text-shadow: 1px 1px 1px rgba(77, 77, 99, 0.75);
+    
+    @include phone {
+        font-size: rem(30px);
+    }
+}
+
+.promo__btn {
+    padding: 10px 65px 10px 30px;
+    background-color: #6b4848;
+    box-shadow: 0 1px 0 #ffffff, inset 0 2px 2px rgba(0, 0, 0, 0.75);
+
+    border-radius: 30px;
+
+    font-family: "Helvetica Condensed";
+    font-size: rem(20px);
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+
+    transition: 1s;
+
+    position: relative;
+    
+    @include phone {
+        font-size: rem(16px);
+    }
+
+    &:hover {
+        background-color: #fff;
+        color: #6b4848;
+    }
+
+    &:after {
+        content: '';
+        width: 19px;
+        height: 13px;
+
+        background-image: url(../img/promo/arrow.png);
+
+
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.promo__descr {
+    padding-top: 42px;
+    text-align: center;
+
+
+    color: #858383;
+    font-family: "Lucida Sans";
+    font-size: rem(15px);
+    color: #14141c;
+    letter-spacing: -0.75px;
+
+    margin-bottom: 31px;
+
+
+}
+
+.promo__descr-sub {
+    color: #6b4848;
+}
+
+a.promo__descr-link {
+    color: #6b4848;
+    text-decoration: none;
+
+    transition: 1s;
+
+    &:hover {
+        color: #14141c;
+    }
+}
