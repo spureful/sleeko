@@ -5,10 +5,8 @@ block variables
     
 section(class=`${sectionClass}` id=`${sectionClass}`)    
     nav.nav
-        button(type='button').nav-btn
-            span.nav__line
         ul.nav__list
-            - var navItems = [{ title: 'home.', href: 'index.html' } , {title: 'Portfolio.',  href: '#portfolio' } , {title: 'what i do. ', href: '#whatido'} , {       title: 'contact me.', href: '#contactme' }];
+            - var navItems = [{ title: 'home.', href: '#promo' } , {title: 'Portfolio.',  href: '#portfolio' } , {title: 'what i do. ', href: '#whatido'} , {       title: 'contact me.', href: '#contactme' }];
                 each navItem in navItems
 
                     li.nav__item(class=(currentPage === navItem.title) ? 'active': '')

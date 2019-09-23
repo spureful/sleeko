@@ -17,21 +17,21 @@
 
         position: fixed;
         top: 20px;
-        right: 20px;
-        z-index: 10;
+        right: 30px;
+        z-index: 100;
 
         transition: 1s;
 
         &:hover {
 
-            .nav__line,
-            .nav__line:before,
-            .nav__line:after {
+            .nav-line,
+            .nav-line:before,
+            .nav-line:after {
                 background-color: #3f3f55;
             }
         }
 
-        .nav__line {
+        .nav-line {
             background-color: #fff;
             width: 100%;
             height: 3px;
@@ -67,53 +67,56 @@
             }
         }
     }
-    
+
     @include phone {
         width: 30px;
     }
 }
 
-.nav.active {
+.promo {
+    .nav.active {
 
-    @include tabletS {
-        .nav__line {
-            background-color: transparent;
 
-            &:before {
-                transform: translateY(-50%) rotate(45deg);
-                top: 50%;
-            }
-
-            &:after {
-                transform: translateY(-50%) rotate(-45deg);
-                top: 50%;
-
-            }
-        }
-
-        .nav__list {
-            display: flex;
-            flex-direction: column;
+        @include tabletS {
+            
+             display: flex;
+            align-items: center;
             justify-content: center;
 
             width: 100%;
             height: 100vh;
-            background-color: rgba(#000, 0.6);
-            text-align: center;
-
-
+            background-color: rgba(#000, 0.8);
+            
             position: fixed;
-                        top: 0;
-            left: 0;
-           
-        }
+                top: 0;
+                left: 0;
+            
+            z-index: 50;
 
-        .nav__item {
-            margin-right: 0;
-            margin-bottom: 30px;
+            .nav__list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
 
-            &:before {
-                display: none;
+                //                width: 100%;
+                //                height: 100vh;
+//                background-color: rgba(#000, 0.8);
+                text-align: center;
+
+
+//                position: fixed;
+//                top: 0;
+//                left: 0;
+
+            }
+
+            .nav__item {
+                margin-right: 0;
+                margin-bottom: 30px;
+
+                &:before {
+                    display: none;
+                }
             }
         }
     }
@@ -198,4 +201,34 @@
         }
 
     }
+}
+
+.nav-btn-active {
+
+    @include tabletS {
+        .nav-line {
+            background-color: transparent;
+
+            &:before {
+                transform: translateY(-50%) rotate(45deg);
+                top: 50%;
+            }
+
+            &:after {
+                transform: translateY(-50%) rotate(-45deg);
+                top: 50%;
+
+            }
+
+            &:hover {
+                background-color: transparent;
+
+                &:before,
+                &:after {
+                    background-color: #6b4848;
+                }
+            }
+        }
+    }
+
 }
