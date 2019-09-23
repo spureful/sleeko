@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Lucida Sans';
+    src: url('LucidaSans.woff2') format('woff2'),
+        url('LucidaSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Condensed';
+    src: url('Helvetica-Condensed-Bold.woff2') format('woff2'),
+        url('Helvetica-Condensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans MT';
+    src: url('GillSansMT.woff2') format('woff2'),
+        url('GillSansMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Condensed';
+    src: url('Helvetica-Condensed-Bold.woff2') format('woff2'),
+        url('Helvetica-Condensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('Georgia-Italic.woff2') format('woff2'),
+        url('Georgia-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gill Sans MT';
+    src: url('GillSansMT-Bold.woff2') format('woff2'),
+        url('GillSansMT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
