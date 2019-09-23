@@ -9,14 +9,8 @@
    
       
         menuBtn.addEventListener('click', function () {
-
-            if (menuModal.classList.contains('active')) {
-                menuModal.classList.remove('active');
-                menuBtn.classList.remove('nav-btn-active');
-            } else {
-                menuModal.classList.add('active');
-                menuBtn.classList.add('nav-btn-active');
-            }
+            menuOpenClose();
+        
         });
 
 
@@ -24,18 +18,20 @@
             
           
             menuItems[i].addEventListener('click', function () {
-               
-                if (menuModal.classList.contains('active')) {
+               menuOpenClose();
+             
+            });
+        };
+
+
+ function menuOpenClose() {
+        if (menuModal.classList.contains('active')) {
                     menuModal.classList.remove('active');
                     menuBtn.classList.remove('nav-btn-active');
                 } else {
                     menuModal.classList.add('active');
                     menuBtn.classList.add('nav-btn-active');
                 }
-            });
-        };
-
-
-
+ }
 
 }());
