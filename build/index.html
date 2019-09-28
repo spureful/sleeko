@@ -143,12 +143,24 @@
             <div class="container">
               <div class="contactme__left">
                 <h2 class="title">Thank you!<span class="subtitle">Get in touch with me now.</span></h2>
-                <form class="contactme__form">
-                  <input class="contactme__input" type="text" placeholder="Your Name">
-                  <input class="contactme__input" type="text" placeholder="Your Email Address">
-                  <input class="contactme__input" type="text" placeholder="Your Estimated Budget">
-                  <textarea class="contactme__input contactme__input--ta" placeholder="Your Project Description"></textarea>
+                <form class="contactme__form" id="js-contact-form">
+                  <label class="contactme__lbl">
+                    <input class="contactme__input" type="text" placeholder="Your Name" name="input-name" id="js-input-name">
+                  </label>
+                  <label class="contactme__lbl">
+                    <input class="contactme__input" type="text" placeholder="Your Email Address" name="input-adress" id="js-input-adress">
+                  </label>
+                  <label class="contactme__lbl">
+                    <input class="contactme__input" type="text" placeholder="Your Estimated Budget" name="input-budget" id="js-input-budget">
+                  </label>
+                  <label class="contactme__lbl">
+                    <textarea class="contactme__input contactme__input--ta" placeholder="Your Project Description" name="input-descr" id="js-input-descr"></textarea>
+                  </label>
                   <button class="contactme__btn" type="submit">submit now</button>
+                  <div class="contactme__modal">
+                    <div class="contactme__modal-txt"> </div>
+                    <button class="contactme__modal-btn" type="button">ok</button>
+                  </div>
                 </form>
               </div>
               <div class="contactme__right">

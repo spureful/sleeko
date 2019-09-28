@@ -1,4 +1,6 @@
 .contactme {
+    
+    position: relative;
     .container {
         display: -webkit-flex;
         display: -moz-flex;
@@ -81,17 +83,26 @@
 }
 
 
+.contactme__lbl{
+    margin-bottom: 15px; 
+    position: relative;
+    width: 100%;
+}
+
 .contactme__input {
-    margin-bottom: 15px;
+//    margin-bottom: 15px;
 
     border-radius: 30px;
     box-shadow: 1px 1px 0 #ffffff, inset 0 3px 3px rgba(0, 0, 0, 0.1);
     background-color: #eee;
     padding: 10px 20px;
+    width: 100%;
 
     font-family: "Lucida Sans";
     font-size: rem(12px);
     color: #686767;
+    
+    
 
 
 
@@ -216,8 +227,13 @@
 .contactme__soc-item {
     margin-right: 17px;
 
+    transition: 1s;
     &:last-child {
         margin-right: 0;
+    }
+    
+    &:hover {
+        transform: scale(1.2);
     }
 }
 
@@ -257,4 +273,61 @@
 
 .contactme__info-descr {
     margin-bottom: 20px;
+}
+
+.input-error {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    color: red;
+    padding: 5px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+     box-shadow: 1px 1px 0 #ffffff, inset 0 3px 3px rgba(0, 0, 0, 0.1);
+    background-color: rgba(red, 0.3);
+}
+  
+.contactme__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: rgba(#8989a3, .5);
+    
+    width: 40%;
+    padding: 20px 0;
+    
+    text-align: center;
+    
+    border-radius: 5px;
+    box-shadow: 0 0 5px #35354a;
+    
+    display: none;
+}
+
+.contactme__modal-txt {
+    margin-bottom: 15px;
+    
+    color: #6b4848;
+    font-size: rem(20px);
+}
+
+.contactme__modal-btn{
+    padding: 5px 20px;
+    
+    border-radius: 5px;
+     box-shadow: 3px 2px 5px #35354a;
+    
+    text-transform: uppercase;
+    
+    transition: 1s;
+    
+    &:hover {
+        background-color: #343449;
+        color: #fff;
+    }
 }
