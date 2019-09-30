@@ -1321,11 +1321,24 @@ a.promo__descr-link {
   -webkit-box-shadow: 0 0 5px #35354a;
   box-shadow: 0 0 5px #35354a;
   display: none; }
+  @media screen and (max-width: 900px) {
+    .contactme__modal {
+      width: 70%; } }
+  @media screen and (max-width: 650px) {
+    .contactme__modal {
+      background-color: #8989a3;
+      z-index: 20; } }
+  @media screen and (max-width: 490px) {
+    .contactme__modal {
+      width: 95%; } }
 
 .contactme__modal-txt {
   margin-bottom: 15px;
   color: #6b4848;
   font-size: 1.25rem; }
+  @media screen and (max-width: 490px) {
+    .contactme__modal-txt {
+      font-size: 1.625rem; } }
 
 .contactme__modal-btn {
   padding: 5px 20px;
@@ -1336,6 +1349,10 @@ a.promo__descr-link {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s; }
+  @media screen and (max-width: 490px) {
+    .contactme__modal-btn {
+      padding: 15px 35px;
+      font-weight: 700; } }
   .contactme__modal-btn:hover {
     background-color: #343449;
     color: #fff; }

@@ -6,10 +6,6 @@ $descr = $_POST['input-descr'];
 
 
 
-$checkbox = $_POST['dont-call'];
-$checkbox = isset($checkbox) ? "no" : "yes";
-
-
 
 $mail_message = '
 <html>

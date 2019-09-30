@@ -1,4 +1,6 @@
 (function mobileMenu() {
+    
+    
         const promoSection = document.querySelector('.promo');
         const menuModal = promoSection.firstElementChild;
         const menuList = menuModal.firstElementChild;

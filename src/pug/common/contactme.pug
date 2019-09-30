@@ -8,7 +8,7 @@ block content
         h2.title Thank you!
             span.subtitle Get in touch with me now.
             
-        form.contactme__form#js-contact-form
+        form.contactme__form#js-contact-form(method='post' action='./plugins/server.php')
             label.contactme__lbl
                 input(type="text" placeholder='Your Name' name='input-name').contactme__input#js-input-name
                 

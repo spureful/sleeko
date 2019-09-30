@@ -307,6 +307,21 @@
     box-shadow: 0 0 5px #35354a;
     
     display: none;
+    
+    @include tablet {
+        width: 70%;
+    }
+    
+    @include tabletS {
+         background-color: #8989a3;
+       
+        z-index: 20;
+      
+    }
+    
+    @include phone {
+        width: 95%;
+    }
 }
 
 .contactme__modal-txt {
@@ -314,6 +329,10 @@
     
     color: #6b4848;
     font-size: rem(20px);
+    
+    @include phone {
+        font-size: rem(26px);
+    }
 }
 
 .contactme__modal-btn{
@@ -325,6 +344,11 @@
     text-transform: uppercase;
     
     transition: 1s;
+    
+    @include phone {
+        padding: 15px 35px;
+        font-weight: 700;
+    }
     
     &:hover {
         background-color: #343449;
